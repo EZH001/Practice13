@@ -1,5 +1,6 @@
 package com.example.finance
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -32,8 +33,9 @@ class MainActivity : AppCompatActivity() {
                     var num2: Int = text2.toInt()
                     tv.setText((num1*num2).toString())
             }
-
-
-
+        }
+        fun btnChangeActivity(view: View){
+            val intent: Intent = Intent(this@MainActivity, MainActivity2::class.java)
+            startActivity(intent)
         }
 }

@@ -24,8 +24,8 @@
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="280dp"
-        android:layout_height="41dp"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
@@ -43,8 +43,8 @@
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="284dp"
+        android:layout_height="55dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
@@ -80,5 +80,16 @@
         android:text="0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:onClick="btnChangeActivity"
+        android:text="Задание с треугольником"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
